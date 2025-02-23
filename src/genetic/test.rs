@@ -21,6 +21,7 @@
 use super::unit::Unit;
 use rand::prelude::*;
 
+#[allow(dead_code)]
 #[derive(Default, Clone)]
 struct MockUnit {
     fitness: f64,
@@ -39,6 +40,7 @@ impl Unit for MockUnit {
     }
 }
 
+#[allow(dead_code)]
 #[derive(Default, Clone)]
 struct FloatyUnit {
     x: f64,
@@ -61,6 +63,7 @@ impl Unit for FloatyUnit {
     }
 }
 
+#[allow(dead_code)]
 #[derive(Default, Clone)]
 struct TendUnit {
     towards: f64,
