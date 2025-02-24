@@ -535,6 +535,13 @@ pub struct Solution {
     price: usize,
 }
 
+impl Solution {
+    /// Cumulative cost of a solution
+    pub fn get_cumulative_cost(&self)->usize{
+        self.stock_pieces.iter().map(|item| item.price).sum()
+    }
+}
+
 /// Optimizer for optimizing rectangular cut pieces from rectangular
 /// stock pieces.
 pub struct Optimizer {
